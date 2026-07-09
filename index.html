@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Your Film</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title" id="index-title">Find Your Film </h1>
+            <a href="watchlist.html" class="site-link">My Watchlist</a>
+        </header>
+        <main>
+            <form class="search-form" role="search" id="search-form">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8" class="icon" id="magnifying-glass-icon" aria-label="magnifying-glass-icon"/></svg>
+                <input type="search" id="movie-search-field" name="search-field" class="search-field" placeholder="Search for a movie">
+                <button type="submit" class="submit-btn" name="submit-btn">Search</button>
+            </form>
+            <ul class="movie-list" id="index-movie-list">
+            </ul>
+            <div class="status-message-cont" id="start-exploring-cont">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film-icon lucide-film"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></svg>
+                <h2 class="status-message-text" id="start-exploring-text">Start exploring</h2>
+            </div>  
+            <div class="status-message-cont" id="error-cont">
+                <h2 class="status-message-text" id="error-text"></h2>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

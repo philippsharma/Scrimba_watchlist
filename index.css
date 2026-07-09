@@ -1,0 +1,195 @@
+
+/* common styles (both sites) */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main{
+    padding: 0 3rem;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background: url("images/realistic-3d-cinema-film-strip-in-perspective-isolated-on-blue-background-template-cinema-festival-movie-design-cinema-film-strip-for-ad-poster-presentation-show-brochure-banner-or-flyer-vector.jpg");
+    background-position: 50% 75%;
+    min-height: 40vh;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.movie-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.add-to-watchlist-btn, .remove-from-watchlist-btn, .movie-el-added-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    height: fit-content;
+    background: white;
+}
+
+.add-to-watchlist-btn:hover, .remove-from-watchlist-btn:hover {
+    text-decoration: underline;
+}
+
+/* index styles */
+
+.status-message-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;    
+    align-items: center;
+    border: 0.8px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    background: white;
+    transform: translateY(-50%)
+}
+
+form input {
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+}
+
+form svg {
+    margin-left: 0.8rem;
+}
+
+form button {
+    align-self: stretch;
+    border: none;
+    border-left: 0.8px solid grey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    max-width: 7rem;
+}
+
+
+.movie-el, .movie-el-title-cont, .movie-el-attributes-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movie-el .movie-el-poster {
+    height: 12rem;
+    width: auto;
+}
+
+.movie-el .movie-el-info-cont {
+    flex: 1;
+}
+
+.movie-el {
+    align-items: center;
+    gap: 1.25rem;
+    border-bottom: 2px solid lightgray;
+    padding: 1.25rem 0;
+}
+
+.movie-el-title-cont {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.movie-el-attributes-cont, .movie-el-plot {
+    font-weight: lighter;
+}
+
+.movie-el-attributes-cont {
+    gap: 1rem;
+}
+
+.movie-el-added-text {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.movie-el-plot {
+    color: grey;
+}
+
+.clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines initially */
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.movie-el-added-text {
+    
+}
+
+/* watchlist.html styles */
+
+.add-movies-link {
+    color: #3D3D3D;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

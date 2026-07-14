@@ -103,8 +103,8 @@ li:last-child .movie-el {
 }
 
 .movie-el-poster {
-    height: 12rem;
-    width: auto;
+    height: auto;
+    width: 8rem;
 }
 
 .movie-el-info-cont {

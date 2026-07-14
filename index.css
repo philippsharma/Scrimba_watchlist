@@ -75,6 +75,7 @@ p, h2, h3 {
 
 button {
     cursor: pointer;
+    color: black;
 }
 
 .hidden {

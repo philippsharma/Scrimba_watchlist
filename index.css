@@ -74,6 +74,10 @@ a:hover {
     background: white;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .add-to-watchlist-btn:hover, .remove-from-watchlist-btn:hover {
     text-decoration: underline;
 }

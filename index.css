@@ -135,13 +135,6 @@ li:last-child .movie-el {
     row-gap: 0.5rem;
 }
 
-.movie-el-added-text {
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .movie-el-plot {
     color: grey;
 }
@@ -166,9 +159,12 @@ li:last-child .movie-el {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.3rem;
+    padding: 0;
+    margin: 0;
     border: none;
     height: fit-content;
     background: white;
+    font-weight: normal;
 }
 
 .add-to-watchlist-btn:hover, .remove-from-watchlist-btn:hover {

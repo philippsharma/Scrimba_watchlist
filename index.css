@@ -188,6 +188,7 @@ form input {
     width: 100%;
     border: none;
     padding: 0.8rem;
+    font-size: max(16px, 1rem);
 }
 
 form svg {
